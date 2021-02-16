@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: whitesmoke;
+}
+
+.container{
+    position: relative;
+    min-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+    
+}
+
+.max-width{
+    min-width: 1200px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #686868;
+    clip-path: polygon(0% 0%, 30% 0, 35% 50%, 30% 100%, 0% 100%);
+}
+
+.bloco{
+    max-width: 70%;
+    margin: 0 auto;
+    color: #686868;
+    font-size: 1.3em;
+    padding-top: 30px;
+}
+
+.titulo{
+    text-align: center;
+    color: #686868;
+    font-size: 1.6em;
+    font-weight: 300;
+    padding-top: 30px;
+}
+
+.titulo::after{
+    content: '';
+    display: block; 
+    width: 200px;
+    border-top: 2px solid #f88b10;
+    margin: 10px auto;
+}
+
+/* CABEBÇALHO - REDE SOCIAIS */
+.redes-sociais{
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+}
+
+.redes-sociais i{
+    text-shadow: 1px 1px 1px #000;
+    color: #f88b10;
+  }
+  
+.redes-sociais a{
+    font-size: 3.2rem;
+    padding: 0 20px;
+  }
+
+  /* CABEÇALHO - NOME DENER SILVA */
+.nome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+}
+
+.nome h1{
+    color: #f88b10;
+    font-size: 3.5em;
+    margin-left: 20%;
+    font-weight: 700;
+}
+
+.nome h2{
+    color: #686868;
+    font-weight: 100;
+    font-size: 1.7em;
+    margin-left: 20%;
+    line-height: 15px;
+}
+
+.nome h3{
+    color: #686868;
+    font-weight: 100;
+    font-size: 1.3em;
+    margin-left: 20%;
+}
+
+/* SEÇÃO SOBRE MIM */
+.sobre-mim{
+    line-height: 1.4em;
+    text-align: justify;
+}
+
+/* SEÇÃO MINHAS SKILLS */
+.minhas-skills{
+}
+
+/* SEÇÃO MEUS PROJETOS */
+.meus-projetos{
+}
+
+/* RODAPÉ */
+.rodape{
+    background: #686868;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: #fff;
+}
