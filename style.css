@@ -24,8 +24,10 @@ header:before{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #686868;
-    clip-path: polygon(0% 0%, 30% 0, 35% 50%, 30% 100%, 0% 100%);
+    background: rgb(43,40,40);
+    background: linear-gradient(90deg, rgba(43,40,40,1) 0%, rgba(104,104,104,1) 35%, rgba(164,163,163,1) 100%);
+    /* clip-path: polygon(0% 0%, 30% 0, 35% 50%, 30% 100%, 0% 100%); */
+    clip-path: polygon(0 1%, 30% 0, 36% 100%, 0% 100%);
 }
 .bloco{
     max-width: 70%;
@@ -38,21 +40,7 @@ header:before{
     background: white;
     padding: 30px;
     border-radius: 6px;
-    box-shadow: 0 1px 6px #939393;
-}
-table, th, td {
-    border: 1px solid #939393;
-    border-collapse: collapse;
-}
-table{
-    width: 100%;
-}
-table a{
-    color: #f88b10;
-    line-height: 1.4em;
-}
-th, td{
-    padding: 15px;
+    box-shadow: 0 1px 6px #686868;
 }
 .titulo{
     text-align: center;
@@ -94,22 +82,22 @@ th, td{
     justify-content: center;
     width: 70%;
     height: 100vh;
-    background: #f88b10;
+    background: rgb(233, 233, 233);
 }
 .nome h1{
-    color: #fff;
-    font-size: 3.5em;
+    color: #f88b10;
+    font-size: 3.7em;
     margin-left: 20%;
     font-weight: 600;
 }
 .nome h2{
-    color: #fff;
+    color: #686868;
     font-weight: 300;
     font-size: 1.7em;
     margin-left: 20%;
 }
 .nome h3{
-    color: #fff;
+    color: #686868;
     font-weight: 100;
     font-size: 1.3em;
     margin-left: 20%;
@@ -202,6 +190,12 @@ th, td{
 .meus-projetos{
     padding-bottom: 60px;
 }
+.meus-projetos .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
 .meus-projetos .titulo{
     padding-bottom: 15px;
 }
@@ -209,7 +203,29 @@ th, td{
     border-style: solid;
     border-width: 0 0 0 6px;
     border-color: #f88b10;
-    margin-top: 15px;
+    text-align: center;
+}
+.meus-projetos .aplicacao{
+    background: #f88b10;
+    border-radius: 6px;
+    color: #fff;
+    padding: 10px;
+}
+.meus-projetos .skills{
+    padding: 15px;
+    font-size: .9em;
+    font-weight: 700;
+}
+.meus-projetos .descricao{
+    font-size: .9em;
+    line-height: 1.4em;
+}
+.meus-projetos a{
+    display: inline-block;
+    font-size: .9em;
+    padding-top: 15px;
+    color: #f88b10;
+    font-weight: 600;
 }
 
 /* RODAPÉ */
