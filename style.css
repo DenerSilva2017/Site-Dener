@@ -6,32 +6,29 @@
 }
 body{
     background: whitesmoke;
+    font-size: 16px;
 }
-.container{
-    position: relative;
-    min-width: 1200px;
-    margin: 0 auto;
+
+/* GIF LOADING */
+#conteudo{
+    display: none;
 }
-.header{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-}
-header:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+#loading{
+    position: fixed;
     width: 100%;
     height: 100%;
-    background: rgb(43,40,40);
-    background: linear-gradient(90deg, rgba(43,40,40,1) 0%, rgba(104,104,104,1) 35%, rgba(164,163,163,1) 100%);
-    /* clip-path: polygon(0% 0%, 30% 0, 35% 50%, 30% 100%, 0% 100%); */
-    clip-path: polygon(0 1%, 30% 0, 36% 100%, 0% 100%);
+    background: url(./img/loading.gif) 50% 50% no-repeat white;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
 }
 .bloco{
     max-width: 70%;
-    margin: 0 auto;
+    margin: auto;
     color: #686868;
     font-size: 1.3em;
     padding-top: 60px;
@@ -57,7 +54,25 @@ header:before{
     margin: 10px auto;
 }
 
-/* CABEBÇALHO - REDE SOCIAIS */
+/* CABEÇALHO */
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+header:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 0, 30% 0, 36% 100%, 0% 100%);
+    background: rgb(43,40,40);
+    background: linear-gradient(90deg, rgba(43,40,40,1) 0%, rgba(104,104,104,1) 35%, rgba(164,163,163,1) 100%);
+}
+
+/* CABEBÇALHO - LINKS REDE SOCIAIS */
 .redes-sociais{
     z-index: 1;
     display: flex;
@@ -71,12 +86,12 @@ header:before{
     color: #f88b10;
   }
 .redes-sociais a{
-    font-size: 3.2rem;
+    font-size: 2.4em;
     padding: 0 20px;
   }
 
   /* CABEÇALHO - NOME DENER SILVA */
-.nome{
+.apresentacao{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,19 +99,19 @@ header:before{
     height: 100vh;
     background: rgb(233, 233, 233);
 }
-.nome h1{
+.apresentacao h1{
     color: #f88b10;
     font-size: 3.7em;
     margin-left: 20%;
     font-weight: 600;
 }
-.nome h2{
+.apresentacao h2{
     color: #686868;
     font-weight: 300;
     font-size: 1.7em;
     margin-left: 20%;
 }
-.nome h3{
+.apresentacao h3{
     color: #686868;
     font-weight: 100;
     font-size: 1.3em;
@@ -110,16 +125,19 @@ header:before{
     text-align: left;
     padding-bottom: 15px;
 }
-.sobre-mim a{
+.sobre-mim .download-cv{
+    text-align: center;
+}
+.sobre-mim .download-cv a{
     text-decoration: none;
     display: inline-block;
     background: #f88b10;
     border: 2px solid #f88b10;
     color: #fff;
-    font-size: 1em;
+    font-size: .9em;
     font-weight: 300;
     padding: 8px 15px;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: all 0.3s ease;
 }
 .sobre-mim a:hover{
@@ -139,11 +157,9 @@ header:before{
 .minhas-skills .barra{
     margin: 10px 0;
 }
-
 .minhas-skills .box{
     padding: 20px 30px; /* desconta 10px da margem da classe barra */
 }
-
 .minhas-skills .info{
     display: flex;
     align-items: center;
@@ -193,11 +209,8 @@ header:before{
 .meus-projetos .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-.meus-projetos .titulo{
-    padding-bottom: 15px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 .meus-projetos .box{
     border-style: solid;
@@ -205,19 +218,19 @@ header:before{
     border-color: #f88b10;
     text-align: center;
 }
-.meus-projetos .aplicacao{
+.meus-projetos .nome-aplicacao{
     background: #f88b10;
     border-radius: 6px;
     color: #fff;
     padding: 10px;
 }
-.meus-projetos .skills{
+.meus-projetos .skills-usadas{
     padding: 15px;
     font-size: .9em;
     font-weight: 700;
 }
-.meus-projetos .descricao{
-    font-size: .9em;
+.meus-projetos .descricao-projeto{
+    font-size: .8em;
     line-height: 1.4em;
 }
 .meus-projetos a{
@@ -244,4 +257,25 @@ header:before{
 }
 .rodape span{
     font-size: .8em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 790px){
+    .header{
+        display: block;
+    }
+    header::before{
+        clip-path: none;
+        background: none;
+    }
+    .redes-sociais{
+        height: 0;
+        display: grid;
+    }
+    .redes-sociais a{
+        z-index: 9;
+    }
+    .header .apresentacao{
+        width: 100%;
+    }
 }
