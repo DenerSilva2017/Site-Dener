@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="icon" href="./img/fav.png">
     <link rel = "preconnect" href = "https://fonts.gstatic.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com">
     <link href = "https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 300 & display = swap "rel =" stylesheet ">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>  
@@ -22,121 +20,99 @@
 <body onload="carregar()">
     <div id="loading"></div>
     <div id="conteudo">
-    <div class="container">
+        <div class="container">
+            <header class="header">
 
-        <!-- CABEÇALHO -->
-        <header class="header">
-            <!-- LINKS REDES SOCIAIS -->
-            <div class="redes-sociais">
-                <a href="https://www.facebook.com/denerffsilva" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/dener-silva/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/DenerSilva2017" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <!-- APRESENTAÇÃO -->
-            <div class="apresentacao">
-                <div>
-                    <!-- <h2>Olá, meu nome é</h2>
-                    <h1>Dener Silva</h1>
-                    <h3>Sou Desenvolvedor Web Front-end</h3> -->
-                    <p class="p1">Olá, meu nome é</p>
-                    <p class="p2">Dener Silva</p>
-                    <p class="p3">Sou Desenvolvedor Web Front-end</p>
+                <!-- APRESENTAÇÃO -->
+                <div class="apresentacao">
+                    <div class="conteudo">
+                        <div class="nome-funcao"> 
+                            <p class="p1">Olá, meu nome é</p>
+                            <p class="p2"><span>Dener </span>Silva</p>
+                            <p class="p3">Sou Desenvolvedor Web <strong>Front-end</strong></p>
+                        </div>
+                        <div class="sobre-mim2">
+                            <p>Tenho graduação tecnológica em Análise e Desenvolvimento de Sistemas e especialização em Desenvolvimento de Aplicações Web. <br> Mantenho o foco em projetos com HTML5, CSS3 e JavaScript.</p>
+                        </div>
+                        <div class="redes-sociais">
+                            <a href="https://www.facebook.com/denerffsilva" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/dener-silva/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/DenerSilva2017" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                        <div class="download-cv">
+                            <a href="#"><i class="fas fa-file-download"></i> Download CV</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <!-- CONTEÚDO -->
-        <main class="main">
-            <!-- SEÇÃO - SOBRE MIM -->
-            <section class="sobre-mim bloco">
-                <h2 class="titulo">Sobre Mim</h2>
-                <div class="box">
-                    <p>Escolhi ser Desenvolvedor Web Fron-end por diversão. Tenho graduação tecnológica em Análise e Desenvolvimento de Sistemas e especialização em Desenvolvimento de Aplicações Web. Mantenho o foco em projetos com HTML5, CSS3 e JavaScript.</p>
-                    <div class="download-cv">
-                        <a href="#"><i class="fas fa-file-download"></i> Download CV</a>
-                    </div>
-                </div>
-            </section>
-            <!-- SEÇÃO - MINHAS SKILLS -->
-            <section class="minhas-skills bloco">
-                <h2 class="titulo">Minhas Skills</h2>
-                <div class="box">
-                    <div class="barra">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="linha html"></div>
-                    </div>
-                    <div class="barra">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="linha css"></div>
-                    </div>
-                    <div class="barra">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="linha js"></div>
-                    </div>
-                    <div class="barra">
-                        <div class="info">
-                            <span>Git</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="linha git"></div>
-                    </div>
-                    <div class="barra">
-                        <div class="info">
-                            <span>Materialize</span>
-                            <span>80%</span>
-                        </div>
-                        <div class="linha materialize"></div>
-                    </div>
-                    <div class="barra">
-                        <div class="info">
-                            <span>Bootstrap</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="linha bootstrap"></div>
-                    </div>
-                </div>
-            </section>
             <!-- SEÇÃO - MEUS PROJETOS -->
             <section class="meus-projetos bloco">
-                <h2 class="titulo">Meus Projetos</h2>
-                <div class="grid">
-                    <div class="box">
-                        <div class="nome-aplicacao">Cadastro de Pessoa Física</div>
-                        <div class="skills-usadas">HTML5, CSS3 e JavaScript.</div>
-                        <p class="descricao-projetos">Nesta aplicação, dois dados são cadastrados: o nome e o número do CPF da pessoa. Na interface, além da opção de cadastro, o usuário tem também a opção de visualizar as pessoas cadastradas e saber o total delas.</p> 
-                        <a href="#">Visualizar projeto</a>
+                <h2 class="titulo">Conheça alguns dos meus projetos</h2>
+                <div class="flex">
+                    <div class="box-proj">
+                        <div class="imgbox">
+                            <img src="./img/projeto-01.jpg" alt="Imagem do projeto">
+                        </div>
+                        <div class="content">
+                            <div class="nome-aplicacao">Cadastro de Pessoa Física</div>
+                            <div class="skills-usadas">HTML5, CSS3 e JavaScript.</div>
+                            <p class="descricao-projetos">Nesta aplicação, dois dados são cadastrados: o nome e o número do CPF da pessoa. Na interface, além da opção de cadastro, o usuário tem também a opção de visualizar as pessoas cadastradas e saber o total delas.</p> 
+                            <a href="#">Visualizar projeto</a>
+                        </div>
                     </div>
-                    <div class="box">
-                        <div class="nome-aplicacao">Cadastro de Pessoa Física</div>
-                        <div class="skills-usadas">HTML5, CSS3 e JavaScript.</div>
-                        <p class="descricao-projetos">Nesta aplicação, dois dados são cadastrados: o nome e o número do CPF da pessoa. Na interface, além da opção de cadastro, o usuário tem também a opção de visualizar as pessoas cadastradas e saber o total delas.</p> 
-                        <a href="#">Visualizar projeto</a>
+                    <div class="box-proj">
+                        <div class="imgbox">
+                            <img src="./img/projeto-02.jpg" alt="Imagem do projeto">
+                        </div>
+                        <div class="content">
+                            <div class="nome-aplicacao">Site com Materialize</div>
+                            <div class="skills-usadas">HTML5, CSS3, JavaScript e Framework Materialize.</div>
+                            <p class="descricao-projetos">Neste elegante site, foi utilizado um layout responsivo. Fruto de um curso do framework, a replica foi um valioso aprendizado.</p> 
+                            <a href="https://cbforma.netlify.app/" target="_blank">Visualizar projeto</a>
+                        </div>
+                    </div>
+                    <div class="box-proj">
+                        <div class="imgbox">
+                            <img src="./img/projeto-03.jpg" alt="Imagem do projeto">
+                        </div>
+                        <div class="content">
+                            <div class="nome-aplicacao">Projeto 03</div>
+                            <div class="skills-usadas">HTML5, CSS3 e JavaScript.</div>
+                            <p class="descricao-projetos">Projeto em processo de conclusão.</p> 
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="box-proj">
+                        <div class="imgbox">
+                            <img src="./img/projeto-04.jpg" alt="Imagem do projeto">
+                        </div>
+                        <div class="content">
+                            <div class="nome-aplicacao">Projeto 04</div>
+                            <div class="skills-usadas">HTML5, CSS3 e JavaScript.</div>
+                            <p class="descricao-projetos">Projeto em processo de conclusão.</p> 
+                            <a href="#"></a>
+                        </div>
+                    </div>
                 </div>
             </section>
-       </main>
 
-       <!-- RODAPÉ -->
-        <div class="rodape">
-            <div class="contato">
-                <p> <i class="fas fa-mobile-alt"></i> <a href="tel:+55-091-98224-2901">(91) 98224-2901</a></p>
-                <p> <i class="far fa-envelope"></i> <a href="mailto:dener.pa@gmail.com">dener.pa@gmail.com</a></p>
-                <p> <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5591982242901" target="_blank"><u>Envie-me uma mensagem</u></a></p>
-            </div>
-            <div>
-                <span>Copyright © Dener Silva 2021 - Todos os direitos reservados</span>
+        <!-- RODAPÉ -->
+            <div class="rodape">
+                <div class="contato">
+                    <p> <i class="fas fa-mobile-alt"></i> <a href="tel:+55-091-98224-2901">(91) 98224-2901</a></p>
+                    <p> <i class="far fa-envelope"></i> <a href="mailto:dener.pa@gmail.com">dener.pa@gmail.com</a></p>
+                    <p> <i class="fab fa-whatsapp"></i> <a href="https://wa.me/5591982242901" target="_blank"><u>Envie-me uma mensagem</u></a></p>
+                </div>
+                <div>
+                    <span>Copyright © Dener Silva 2021 - Todos os direitos reservados</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+    
+    <!-- SCRIPT -->
     <script src="./script.js"></script>
+
 </body>
 </html>
